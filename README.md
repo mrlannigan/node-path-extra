@@ -24,12 +24,17 @@ You can still use all of the vanilla Node.js path methods.
 Methods:
 
 ```javascript
-path.tempdir() //returns a temporary directory that is operating system specific.
-path.homedir() //return the user's home directory
-path.datadir()
+path.tempDir() //returns a temporary directory that is operating system specific.
+path.homeDir() //return the user's home directory
+path.dataDir()
 ```
 
+Test
+----
 
+```bash
+$ npm test
+```
 
 License
 -------

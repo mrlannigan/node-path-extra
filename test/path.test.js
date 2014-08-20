@@ -1,11 +1,11 @@
 var path = require('../lib/path'),
-    fs = require('fs-extra'),
+    fs = require('fs'),
     assert = require('assert');
 
 describe('path', function () {
-    describe('+ tempdir()', function () {
+    describe('+ tempDir()', function () {
         it('should return a temporary directory', function () {
-            var tmpDir = path.tempdir(),
+            var tmpDir = path.tempDir(),
                 testFile = 'TEST-path-ext-#{Date.now()}',
                 testString = 'SOME STRING',
                 retString;
@@ -21,9 +21,9 @@ describe('path', function () {
         });
     });
 
-    describe('+ homedir()', function () {
+    describe('+ homeDir()', function () {
         it('should return the users home directory', function () {
-            var homeDir = path.homedir();
+            var homeDir = path.homeDir();
             assert(homeDir);
         });
     });
